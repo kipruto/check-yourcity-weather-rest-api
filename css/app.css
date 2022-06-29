@@ -1,0 +1,883 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    min-height: 80px;
+    background-color: #dfdfdf;
+    align-items: center;
+}
+
+.nav-link {
+    font-family: "Lexend" !important;
+    font-size: 15px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html {
+    background-color: #2e98e3 !important;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: tabular-nums;
+    font-variant-east-asian: normal;
+}
+
+body {
+    background-color: inherit;
+    font-family: "Lexend" !important;
+}
+
+section {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: rgb(100, 1, 79) !important;
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.brand {
+    text-align: center;
+    font-size: 4rem;
+    color: whitesmoke;
+    margin-bottom: 30px;
+}
+
+input {
+    width: 90%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: rgb(248, 248, 248);
+    display: inline-block;
+    font-family: "Lexend" !important;
+}
+
+form ion-icon {
+    width: 8%;
+    font-size: 2rem;
+    margin-bottom: -8px;
+    color: rgb(75, 75, 75);
+    display: inline-block;
+}
+
+.search-result-for-add {
+    height: auto;
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    overflow: hidden;
+    box-shadow: 0 12px 10px -6px #1d2f50;
+}
+
+#table-tasks p {
+    font-size: 15px;
+    margin-top: 20px;
+    color: rgb(44, 6, 2);
+    font-family: "Lexend" !important;
+}
+
+#table-tasks hr {
+    background-color: white;
+    height: 2px;
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-result-for-add .title {
+    color: rgb(56, 56, 56);
+    margin: 20px 10px 0 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: "Lexend" !important;
+}
+
+.view-btn,
+.pick-btn {
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    padding: 10px 0;
+    background-color: #86d700;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Lexend" !important;
+}
+
+.save-conversion-btn {
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 0;
+    background-color: #ffffff;
+    color: #333999;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Lexend" !important;
+    border: 2px solid #333999;
+}
+
+.save-conversion-btn:hover {
+    background-color: #ff9e1b;
+    color: #000000;
+}
+
+.item-data {
+    color: rgb(255, 255, 255);
+    display: block;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+    font-family: "Lexend" !important;
+}
+
+.container.initial .brand {
+    font-size: 7rem;
+    font-family: "Lexend" !important;
+}
+
+.container.initial form {
+    max-width: 800px;
+}
+
+.container.initial form input {
+    padding: 20px;
+    font-size: 2rem;
+    font-family: "Lexend" !important;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    color: var(--color-4);
+    text-decoration: none;
+}
+
+.weatheritem {
+    background: gainsboro;
+    width: 100%;
+    border-radius: 8px;
+    padding: 15px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titleforlist {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.image-div {
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+.image-div button {
+    margin: 20px 0px 20px 40px;
+}
+
+.ingrlistitems h1 {
+    margin-bottom: 60px;
+}
+
+.ingrlistitems li {
+    list-style: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.weather-result {
+    margin-top: 50px;
+    width: 100%;
+    grid-gap: 25px;
+}
+
+.weather-result .title {
+    color: rgb(46, 45, 45);
+    margin: 20px 10px 0 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "Lexend" !important;
+}
+
+.conversion-result {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    width: 100%;
+    grid-gap: 25px;
+    background-color: #ffffff;
+}
+
+.conversion-result .title {
+    color: rgb(46, 45, 45);
+    margin: 20px 10px 0 0;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Lexend" !important;
+}
+
+.conversionList {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    border-radius: 2px;
+    height: 100px;
+    padding: 0px 20px;
+}
+
+.currencycontainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.currencycontainer h1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #c26e01;
+}
+
+.conversion-result img {
+    object-fit: contain;
+    background-size: contain;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.weathertitle {
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0px 5px 40px;
+    font-family: "Lexend" !important;
+}
+
+.search-weather label h5 {
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.save-city-btn,
+.remove-city {
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    padding: 8px 0;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+    align-self: flex-start;
+    font-family: "Lexend" !important;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    border: 1.2px solid rgb(255, 255, 255);
+    background: none;
+    cursor: pointer;
+}
+
+.city-name {
+    position: absolute;
+    margin-top: 20px;
+    top: 0;
+    left: 40px;
+}
+
+.country-name {
+    position: absolute;
+    margin-top: 60px;
+    top: 0;
+    left: 40px;
+    font-size: 12px;
+    font-weight: light;
+}
+
+.save-city-btn:hover {
+    background-color: #ffbd03;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.weatheritem img {
+    width: 80%;
+    margin: 20px;
+    height: 300px;
+    border-radius: 4px;
+    background-size: cover;
+    object-fit: fill;
+}
+
+.weatherlist {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 10px 0px;
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 10px;
+}
+
+.currencyList {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 10px 0px;
+    border: 1px solid rgb(73, 73, 73);
+    border-radius: 10px;
+}
+
+.ingr-image {
+    height: 80%;
+    width: 70%;
+    margin-left: 20px;
+}
+
+.ingr-details p {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Lexend" !important;
+}
+
+.ingr-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingr-actions button {
+    margin: 5px auto;
+    width: 70%;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    font-size: 12px;
+    background-color: #333999;
+    color: white;
+    padding: 15px;
+}
+
+.ingr-actions button:hover {
+    background-color: rgb(194, 0, 0);
+    color: white;
+    border: none;
+}
+
+.ingr-actions button:nth-child(2):hover {
+    background-color: rgb(177, 81, 81);
+}
+
+.searchcurrency {
+    font-size: 60px;
+    color: #ffffff !important;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Lexend" !important;
+}
+
+.searchweather {
+    font-size: 40px;
+    color: #ffffff !important;
+    font-family: "Lexend" !important;
+}
+
+.currency-title {
+    margin-top: 10%;
+    font-weight: bold;
+    font-family: "Lexend" !important;
+    color: rgb(255, 255, 255);
+    position: relative;
+    width: 100%;
+    font-size: 30px;
+}
+
+.currency-title-main {
+    font-size: 50px !important;
+    margin-top: 10%;
+    font-weight: bold;
+    font-family: "Lexend" !important;
+    color: rgb(255, 255, 255);
+    position: relative;
+    width: 100%;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.search-here {
+    width: 100% !important;
+}
+
+.search-here img {
+    right: 50%;
+    top: -20px;
+    height: 100px;
+    position: absolute;
+}
+
+#my-weather-list-div h2,
+th {
+    color: white;
+    font-family: "Lexend" !important;
+}
+
+#currency-list-div h2,
+th {
+    color: white;
+    font-family: "Lexend" !important;
+}
+
+.currency-icon {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.button-list-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: none;
+}
+
+.button-list-main button {
+    height: 60px;
+    background: rgb(7, 147, 172);
+    border: none;
+    margin: 10px 0px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: "Lexend" !important;
+}
+
+.button-list-main button:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.btn-default {
+    /* BS4 changed the appearance of btn-default on anchor tags.
+    I liked the old way better... so that's
+    what I am making happen here.  */
+    background-color: #ccc;
+    color: black;
+}
+
+.btn {
+    /*make text wrap nicely in buttons */
+    white-space: normal;
+}
+
+.locked {
+    display: none !important;
+    /*locked content must not be shown to user*/
+}
+
+.unlocked {
+    border-width: initial;
+    /*set border-width to whatever the default is. */
+}
+
+.secured {
+    border-width: initial;
+    /*set border-width to whatever the default is. */
+}
+
+label {
+    margin-top: 10px;
+}
+
+.convert-currency {
+    box-shadow: 0 12px 10px -6px #1d2f50;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+.search-result-for-weather .frame {
+    margin: 0 auto;
+}
+
+#search-weather-div {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-weather {
+    box-shadow: 0 12px 10px -6px #1d2f50;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+    padding: 20px 10px;
+}
+
+.search-weather label {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 15px;
+    color: #333999;
+    font-weight: bold;
+}
+
+.search-weather input {
+    width: 100%;
+    margin-right: 5px;
+    font-size: 15px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    background-color: #ffffff;
+}
+
+.search-weather button {
+    border: 0;
+    width: 40%;
+    height: 50px;
+    display: block;
+    margin-left: 13%;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 15px;
+    max-width: 425px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    letter-spacing: 2.2px;
+    background-color: #333999;
+}
+
+.search-weather button:hover {
+    background-color: #ffbd03;
+    color: #000000;
+}
+
+.convert-currency label {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+    font-size: 15px;
+    color: #333999;
+    font-weight: bold;
+}
+
+.convert-currency label select {
+    width: 100%;
+    margin-right: 5px;
+    font-size: 18px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+.convert-currency #amount {
+    width: 100%;
+    margin-right: 5px;
+    font-size: 20px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    background-color: #ffffff;
+}
+
+.convert-currency #calculate {
+    border: 0;
+    width: 80%;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 15px;
+    max-width: 425px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    letter-spacing: 2.2px;
+    background-color: #333999;
+}
+
+.convert-currency #calculate:hover {
+    background-color: #ff9e1b;
+    color: #333999;
+}
+
+
+/* .weather-css */
+
+.frame {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 400px;
+    height: 410px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 3px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: #333;
+    font-family: "Lexend" !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/photo-1428908728789-d2de25dbd4e2.jpeg");
+    background-size: cover;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-div {
+    position: relative;
+    top: -8em;
+    left: -8em;
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+}
+
+.icon-div img {
+    margin: 40px;
+    background-size: cover;
+}
+
+.clouds {
+    position: absolute;
+}
+
+.weather {
+    position: absolute;
+    top: 9.2em;
+    left: -10em;
+    height: 6em;
+    width: 26em;
+    background: #fff;
+    margin-left: -0.5em;
+    color: #1a2238;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+.weather-listed-city-res{
+    height: 6em;
+    width: 100%;
+    background: #fff;
+    color: #1a2238;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    margin-top: 40%;
+}
+.center-res {
+    display: flex;
+    flex-direction: column;
+    height: 300px
+}
+
+.name-city {
+    margin: 30px 0px 10px 40px;
+}
+
+.name-country {
+    margin:0px 40px;
+    font-size: 14px;
+    font-weight: light;
+}
+
+.div-icon {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+.div-icon img {
+    background-size: cover;
+}
+
+.temp {
+    font-size: 1.8em;
+    padding: 10px 20px;
+}
+
+.metrics {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    padding: 10px 20px;
+    border-left: 2px solid rgb(221, 221, 221);
+}
+
+span {
+    margin: 0.2em 0;
+}
+
+.week-preview {
+    border-spacing: 0.2em 0.2em;
+}
+
+tr {
+    text-align: left;
+}
+
+.weather-description {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#listSavedCities {
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+#view-listed-cities {
+    display: flex;
+    flex-direction: column;
+height: 400px;
+width: 400px;
+    margin-left: 0px;
+    border-radius: 3px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/photo-1428908728789-d2de25dbd4e2.jpeg");
+    background-size: cover;
+    position: relative;
+    margin-top: 30px;
+
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#form-login {
+    margin: 200px auto !important;
+    background-color: rgba(224, 172, 172, 0) !important;
+}
+
+#form-login input {
+    height: 60px !important;
+}
+
+#form-login input::placeholder {
+    font-size: 1.4rem !important;
+}
+
+#div-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#div-main hr {
+    background-color: white;
+    height: 2px;
+}
+
+#div-main p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
